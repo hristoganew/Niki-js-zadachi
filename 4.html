@@ -1,0 +1,33 @@
+<html>
+<body>
+<script>
+    var n = Math.floor(Math.random() * 998) + 1;
+    var i = 0;
+
+    do{
+        var b = parseInt(prompt("Избери Число" , 1));
+
+        if (b == n){
+        alert("Got it! Остават " + (10 - i) + " опита. Число = " + b);
+        break;
+        }
+
+        if (b < n){
+            alert("Too low! Остават " + (10 - i) + " опита. Число = " + b);
+        }
+
+        if (b > n){
+            alert("Too High! Остават " + (10 - i) + " опита. Число = " + b);
+        }
+
+        if (i == 10){
+            alert("Game over! Число = " + n);
+        }
+
+        i++;
+    }
+    while(i < 10)
+
+</script>
+</body>
+</html>
